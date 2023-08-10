@@ -1,4 +1,4 @@
-#include <stdkio.h>
+#include <stdio.h>
 /**
  * main - Printing the size of various computor types
  * Return: 0 (Success)

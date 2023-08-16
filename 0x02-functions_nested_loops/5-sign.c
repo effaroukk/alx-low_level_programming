@@ -1,15 +1,26 @@
 #include "main.h"
 /**
- * _isalpha - Checks for alphabetic character
- * @y: The character to be checked
- * Return: 1 for alphabetic character or 0 for anything else
+ * print_sign - Print the sign of a number
+ * @n: The number to be checked
+ * Return: 1 for positive number, -1 for negative number or 0 for anything else
  */
 
-int _isalpha(int y)
+int print_sign(int n)
 {
-	if ((y >= 65 && y <= 97) || (y >= 97 && y <= 122))
+
+	if (n > 0)
 	{
+		_putchar(43);
 		return (1);
 	}
-	return (0);
+	else if (n < 0)
+	{
+		_putchar(45);
+		return (-1);
+	}
+	else
+	{
+		_putchar(48);
+		return (0);
+	}
 }

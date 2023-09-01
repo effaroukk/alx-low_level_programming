@@ -13,6 +13,10 @@ char *_strncat(char *dest, char *src, int n)
 	int i;
 	int j;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ae1c4344bc22a5202085c87474ae6128c8968aca
 	i = 0;
 	while (dest[i] != '\0')
 	{

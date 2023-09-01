@@ -12,16 +12,28 @@ char *_strstr(char *haystack, char *needle)
 		char *l = haystack;
 		char *p = needle;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ae1c4344bc22a5202085c87474ae6128c8968aca
 		while (*l == *p && *p != '\0')
 		{
 			l++;
 			p++;
 		}
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ae1c4344bc22a5202085c87474ae6128c8968aca
 		if (*p == '\0')
 			return (haystack);
 	}
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ae1c4344bc22a5202085c87474ae6128c8968aca
 	return (0);
 }
 

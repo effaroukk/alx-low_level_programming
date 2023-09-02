@@ -11,10 +11,7 @@ char *_memset(char *s, char b, unsigned int n)
 {
 	int i = 0;
 
-<<<<<<< HEAD
-=======
 
->>>>>>> ae1c4344bc22a5202085c87474ae6128c8968aca
 	for (; n > 0; i++)
 	{
 		s[i] = b;

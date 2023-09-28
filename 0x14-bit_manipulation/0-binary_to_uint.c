@@ -26,16 +26,3 @@ unsigned int binary_to_uint(const char *b)
 	return (outpt);
 }
 
-int main(void)
-{
-	const char *binary_str = "110101";
-	unsigned int outpt = binary_to_uint(binary_str);
-
-	if (outpt != 0)
-		printf("Unsigned Integer Value: %u\n", outpt);
-	else
-		printf("Invalid binary input.\n");
-
-	return (0);
-}
-

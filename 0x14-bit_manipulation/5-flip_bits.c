@@ -13,7 +13,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int now;
 	unsigned long int isolate = n ^ m;
 
-	for (z = 47; z >= 0; z--)
+	for (z = 49; z >= 0; z--)
 	{
 		now = isolate >> z;
 		if (now & 1)

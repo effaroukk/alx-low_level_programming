@@ -68,7 +68,7 @@ int main(int argc, char *argv[])
 	}
 
 	bufa = make_bufa(argv[2]);
-	from = open(argv[1], O_RDONLY);
+	beg = open(argv[1], O_RDONLY);
 	r = read(beg, bufa, 980);
 	end = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
@@ -90,7 +90,7 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 
-		r = read(from, bufa, 980);
+		r = read(beg, bufa, 980);
 		end = open(argv[2], O_WRONLY | O_APPEND);
 
 	} while (r > 0);

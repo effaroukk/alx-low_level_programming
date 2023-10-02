@@ -9,6 +9,15 @@
 ssize_t read_textfile(const char *filename, size_t letters);
 int create_file(const char *filename, char *text_content);
 int append_text_to_file(const char *filename, char *text_content);
-
+void elf_check(unsigned char *e_idnt);
+void magic_print(unsigned char *e_idnt);
+void class_print(unsigned char *e_idnt);
+void close_elf(int elf);
+void data_print(unsigned char *e_idnt);
+void version_print(unsigned char *e_idnt);
+void abi_print(unsigned char *e_idnt);
+void osabi_print(unsigned char *e_idnt);
+void type_print(unsigned int e_type, unsigned char *e_idnt);
+void entry_print(unsigned long int e_entry, unsigned char *e_idnt)
 #endif
 
